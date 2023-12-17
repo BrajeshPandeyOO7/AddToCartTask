@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screeing Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main class="container-box">
+        <div class="box-header">
+            <hr>
+            <h3>Bundle & Save</h3>
+            <hr>
+        </div>
+        <div onclick="boxEventHandler(event,'first-box-pair')" id="first-box-pair" class="box-item">
+            <section>
+                <input id="first-pair" type="radio">
+                <div class="pair-text">
+                    <p>1 Pair</p>
+                    <p>DDK 195.00</p>
+                </div>
+                <div>
+                    <p class="fifty-percent-off">50% OFF</p>
+                </div>
+            </section>
+            <section class="second-section">
+                <div >
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>   
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div onclick="boxEventHandler(event,'second-box-pair')" id="second-box-pair" class="box-item active-item-box">
+            <section>
+                <input type="radio">
+                <div class="pair-text">
+                    <p>2 Pair</p>
+                    <p>DDK 345.00</p>
+                </div>
+                <p class="not-valid-text"><s>DDK 195.00</s></p>
+                <div class="most-popular">
+                    <p>Most Popular</p>
+                    <p>50% OFF</p>
+                </div>
+            </section>
+            <section class="second-section active-section-box">
+                <div >
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>   
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div onclick="boxEventHandler(event,'third-box-pair')" id="third-box-pair" class="box-item">
+            <section>
+                <input type="radio">
+                <div class="pair-text">
+                    <p>3 Pair</p>
+                    <p>DDK 528.00</p>
+                </div>
+                <div>
+                    <p class="fifty-percent-off">50% OFF</p>
+                </div>
+            </section>
+            <section class="second-section">
+                <div >
+                    <p></p>
+                    <p>#1</p>
+                    <p>#2</p>
+                </div>
+                <div>
+                    <p>Size</p>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                    <div>S <span class="arrow-span"></span>
+                    </div>
+                </div>
+                <div>
+                    <p>Colour</p>   
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                    <div>Colour <span class="arrow-span"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="total-amount">
+            <p>Free 2 Day Shipping</p>
+            <p>Total : DDK 360.00</p>
+        </div>
+        <div>
+            <button>
+                + Add to Cart 
+            </button>
+            <p>© Powered by Pumper</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
