@@ -68,9 +68,8 @@ main {
     border: 0.9px solid #C8C8C8;
     border-radius: 3px;
     cursor: pointer;
-    transition: height .2s;
+    transition: height 100ms;
     height: 74.11px;
-    overflow: hidden;
 }
 
 .container-box > .box-item > section:nth-of-type(1) {
@@ -194,17 +193,17 @@ main {
     border: 0.9px solid #007F61 !important;
 }
 
-.active-section-box {
-    visibility: visible !important;
-}
-
 .second-section {
-    display: flex;
     align-items: center;
     gap: 7px;
     padding: 0px 40px 20px 42px;
-    visibility: hidden;
+    display: none;
 }
+
+.active-section-box {
+    display: flex;
+}
+
 
 .second-section > div {
     display: flex;
@@ -253,6 +252,37 @@ main {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #171616;
+}
+
+.size-section {
+    position: relative;
+}
+
+.custome-size-main {
+    display: block !important;
+    position: absolute;
+    width: calc(100% + 1px);
+    background: white;
+    top: 24px;
+    z-index: 2;
+    box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.3);
+}
+
+.custome-size-select-menu {
+    display: none; 
+}
+
+.custome-size-main > p {
+    border-bottom: 0.2px solid #eae5e5;
+    margin: 0;
+}
+
+.custome-size-main > p:hover {
+    background: #2af64070;
+}
+
+.toggle-arrow {
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 361px) {
