@@ -1,5 +1,6 @@
 const ACTIVE_MAIN_BOX_CLASS = "active-item-box";
-const ACTIVE_SECTION_BOX_CLASS = "active-section-box"
+const ACTIVE_SECTION_BOX_CLASS = "active-section-box";
+const ACTIVE_OVERFLOW_BOX_CLASS = "active-item-box-overflow";
 
 const getElementByClass = (class_name) => {
     let elements = document.getElementsByClassName(class_name);
@@ -25,15 +26,19 @@ function boxEventHandler(event, id){
                 secondSection.classList.remove(ACTIVE_SECTION_BOX_CLASS) // reset action section class
             }
             i.classList.remove(ACTIVE_MAIN_BOX_CLASS);
+            i.classList.remove(ACTIVE_OVERFLOW_BOX_CLASS);
         })
     }
     const [,secondSection] = element.children;
     secondSection.classList.add(ACTIVE_SECTION_BOX_CLASS);
     element.classList.add(ACTIVE_MAIN_BOX_CLASS);
+    setTimeout(() => {
+        element.classList.add(ACTIVE_OVERFLOW_BOX_CLASS);
+    }, 100)
     inputEle.checked = true;
 }
 
-function sizeSelectHandler(event, second_class){
+function selectHandler(event, second_class){
     event.stopPropagation()
     const { target } = event;
     let targetElement = (target?.tagName === 'DIV') ? target.children : target?.parentElement?.children
@@ -58,7 +63,6 @@ function sizeSelectHandler(event, second_class){
     }
 
     const handleArrowToggle = (element) => {
-        console.log(element);
         element.classList.toggle('toggle-arrow');
     }
     handleArrowToggle(arrow);
