@@ -1,25 +1,25 @@
 @font-face {
     font-family: "inter bold";
     src:
-        url("/public/font/Inter-Bold.ttf") format('truetype'),
+        url("https://brajeshpandeyoo7.github.io/AddToCartTask/public/font/Inter-Bold.ttf") format('truetype'),
 }
 
 @font-face {
     font-family: "inter light";
     src:
-        url("/public/font/Inter-Light.ttf") format('truetype'),
+        url("https://brajeshpandeyoo7.github.io/AddToCartTask/public/font/Inter-Light.ttf") format('truetype'),
 }
 
 @font-face {
     font-family: "inter medium";
     src:
-        url("/public/font/Inter-Medium.ttf") format('truetype'),
+        url("https://brajeshpandeyoo7.github.io/AddToCartTask/public/font/Inter-Medium.ttf") format('truetype'),
 }
 
 @font-face {
     font-family: "inter regular";
     src:
-        url("/public/font/Inter-Regular.ttf") format('truetype'),
+        url("https://brajeshpandeyoo7.github.io/AddToCartTask/public/font/Inter-Regular.ttf") format('truetype'),
 }
 
 body {
