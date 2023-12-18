@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Screeing Assignment</title>
+    <title>Brajesh</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -36,10 +34,10 @@
                 </div>
                 <div>
                     <p>Size</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -47,10 +45,10 @@
                             <p>XXL</p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -61,20 +59,20 @@
                 </div>
                 <div>
                     <p>Colour</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
                             <p>Olive <span class="olive-sub-menu"></span></p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
@@ -84,7 +82,8 @@
                 </div>
             </section>
         </div>
-        <div onclick="boxEventHandler(event,'second-box-pair')" id="second-box-pair" class="box-item active-item-box active-item-box-overflow">
+        <div onclick="boxEventHandler(event,'second-box-pair')" id="second-box-pair"
+            class="box-item active-item-box active-item-box-overflow">
             <section>
                 <input type="radio" checked>
                 <div class="pair-text">
@@ -105,10 +104,10 @@
                 </div>
                 <div>
                     <p>Size</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -116,10 +115,10 @@
                             <p>XXL</p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -130,20 +129,20 @@
                 </div>
                 <div>
                     <p>Colour</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
                             <p>Olive <span class="olive-sub-menu"></span></p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
@@ -172,10 +171,10 @@
                 </div>
                 <div>
                     <p>Size</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -183,10 +182,10 @@
                             <p>XXL</p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>S</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondSizeHandler(event)">
                             <p>S</p>
                             <p>M</p>
                             <p>L</p>
@@ -197,20 +196,20 @@
                 </div>
                 <div>
                     <p>Colour</p>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="firstColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
                             <p>Olive <span class="olive-sub-menu"></span></p>
                         </div>
                     </div>
-                    <div onclick="selectHandler(event,'custome-size-main')" class="select-section-q">
+                    <div onclick="selectEventHandler(event,'custome-size-main')" class="select-section-q">
                         <span>Colour</span>
                         <span class="arrow-span"></span>
-                        <div class="custome-size-select-menu">
+                        <div class="custome-size-select-menu" onclick="secondColorHandler(event)">
                             <p>Red <span class="red-sub-menu"></span></p>
                             <p>Blue <span class="blue-sub-menu"></span></p>
                             <p>Navy <span class="navy-sub-menu"></span></p>
@@ -225,7 +224,7 @@
             <p>Total : DDK 360.00</p>
         </div>
         <div>
-            <button>
+            <button onclick="addToCartSubmitHandler(event)">
                 + Add to Cart
             </button>
             <p>© Powered by Pumper</p>

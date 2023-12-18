@@ -22,14 +22,6 @@
         url("/public/font/Inter-Regular.ttf") format('truetype'),
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-}
-
 body {
     position: relative;
 }
@@ -333,5 +325,9 @@ main {
 @media screen and (max-width: 361px) {
     main {
         width: auto;
+    }
+
+    .container-box>.box-item {
+        height: auto !important;
     }
 }
