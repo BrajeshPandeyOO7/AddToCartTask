@@ -122,8 +122,9 @@ const selectEventHandler = (() => {
 
     const clearSelectCache = () => {
         if (setSelectCache.length) {
-            setSelectCache.forEach(i => i.tag.classList.remove(i._class))
+            setSelectCache.forEach(i => i.tag?.classList.remove(i._class))
         }
+        setSelectCache = []
     }
 
     document.addEventListener('click', () => {
@@ -137,7 +138,7 @@ const selectEventHandler = (() => {
         let targetElement = (target?.tagName === 'DIV') ? target.children : target?.parentElement?.children
         const [selectViewContent, arrow, selectMenu] = targetElement ?? [];
 
-        selectMenu.classList.toggle(second_class);
+        selectMenu?.classList?.toggle(second_class);
 
         // Put select menu in cache then remove form it
         setSelectCache.push(
@@ -153,7 +154,11 @@ const selectEventHandler = (() => {
 
         const handleSelectMenuItem = (e) => {
             // e?.stopPropagation();
-            selectViewContent.textContent = e.target.textContent;
+            let _text = e.target.textContent;
+            if(!_text){
+                _text = e.target?.parentElement.textContent
+            }
+            selectViewContent.textContent = _text;
 
             [...selectMenu.children].forEach(i => { // Once item selected then remove the event listner form select menu!
                 i?.removeEventListener('click', handleSelectMenuItem)
